@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import express from 'express'
 import { graphqlExpress,graphiqlExpress } from 'apollo-server-express'
 import { makeExecutableSchema } from 'graphql-tools'
@@ -31,6 +32,10 @@ const graphQlServer = createServer(app)
 
 mocks().then(() => {
     graphQlServer.listen(constants.PORT, err => {
-        err ? console.error(err) : console.log(`App listen on port: ${constants.PORT}`)
+        if(err) {
+            console.error(err) 
+        } else {
+            console.log(`App listen on port: ${constants.PORT}`)
+        }
     })
 })
