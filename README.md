@@ -8,8 +8,8 @@
 ## Running Locally
 
 ```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
+$ git clone https://github.com/22mahmoud/Express-GraphQl-Server-Starter-Pack.git # or clone your own fork
+$ cd Express-GraphQl-Server-Starter-Pack
 $ yarn
 $ yarn dev
 ```
